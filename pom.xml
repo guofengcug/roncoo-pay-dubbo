@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.roncoo.pay.common</groupId>
+	<artifactId>roncoo-pay-dubbo</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>roncoo-pay-dubbo</name>
+	<url>http://maven.apache.org</url>
+
+	<parent>
+		<groupId>com.roncoo</groupId>
+		<artifactId>base</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+ <!--<parent>
+	 <groupId>com.roncoo.pay.common</groupId>
+	 <artifactId>roncoo-pay</artifactId>
+	 <version>2.0.0-SNAPSHOT</version>
+ </parent>-->
+	<organization>
+		<name>Roncoo</name>
+		<url>http://www.roncoo.com</url>
+	</organization>
+
+	<modules>
+		<!-- core 是支付系统核心基础包 -->
+		<module>roncoo-pay-app-notify</module>
+		<!-- 运营boss后台 -->
+		<module>roncoo-pay-common-config</module>
+		<!-- 对账流程app,发起对账核心业务 -->
+		<module>roncoo-pay-service-account</module>
+		<!-- 平台通知消息的处理 -->
+		<module>roncoo-pay-service-account-api</module>
+		<!-- 结算定时处理app，发起定时跑批处理，统计结算数据 -->
+		<module>roncoo-pay-service-notify</module>
+		<module>roncoo-pay-service-notify-api</module>
+		<!-- 支付网关web -->
+		<module>roncoo-pay-service-trade</module>
+		<module>roncoo-pay-service-trade-api</module>
+		<module>roncoo-pay-service-accounting-api</module>
+		<module>roncoo-pay-app-queue</module>
+		<!-- 支付系统核心业务 -->
+		<module>roncoo-pay-service-user</module>
+		<!-- 商户后台 -->
+		<module>roncoo-pay-service-user-api</module>
+		<!-- 商户订单通知 -->
+		<module>roncoo-pay-web-boss</module>
+		<module>roncoo-pay-web-gateway</module>
+		<module>roncoo-pay-web-sample-shop</module>
+		<!-- 消息管理理子系统 人工参入管理异常消息 -->
+		<module>roncoo-pay-web-message</module>
+		<!-- 消息状态确认子系统、消息恢复子系统 -->
+		<module>roncoo-pay-app-message</module>
+
+		<!-- 消息服务子系统 -->
+		<module>roncoo-pay-service-message</module>
+		<module>roncoo-pay-service-message-api</module>
+
+	</modules>
+
+
+	<!-- 打包插件 -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<uniqueVersion>false</uniqueVersion>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.8</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<failOnError>true</failOnError>
+					<verbose>true</verbose>
+					<fork>true</fork>
+					<compilerArgument>-nowarn</compilerArgument>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<forkMode>once</forkMode>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- developer -->
+	<developers>
+		<developer>
+			<name>Along</name>
+			<id>shen.jialong</id>
+			<email>shenjl@roncoo.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+		<developer>
+			<name>peter</name>
+			<id>hu.peter</id>
+			<email>hupt@roncoo.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+		<developer>
+			<name>hugo</name>
+			<id>zeng.hao</id>
+			<email>zengh@roncoo.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+</project>
