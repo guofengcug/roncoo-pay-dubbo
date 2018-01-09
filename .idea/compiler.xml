@@ -10,6 +10,7 @@
         <module name="roncoo-pay-app-notify" />
         <module name="roncoo-pay-app-queue" />
         <module name="roncoo-pay-common-config" />
+        <module name="roncoo-pay-common-core" />
         <module name="roncoo-pay-service-account" />
         <module name="roncoo-pay-service-account-api" />
         <module name="roncoo-pay-service-accounting" />
@@ -34,6 +35,7 @@
       <module name="roncoo-pay-app-notify" target="1.7" />
       <module name="roncoo-pay-app-queue" target="1.7" />
       <module name="roncoo-pay-common-config" target="1.7" />
+      <module name="roncoo-pay-common-core" target="1.7" />
       <module name="roncoo-pay-dubbo" target="1.7" />
       <module name="roncoo-pay-service-account" target="1.7" />
       <module name="roncoo-pay-service-account-api" target="1.7" />

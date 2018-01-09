@@ -27,7 +27,9 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.5.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/roncoo/pay/common/roncoo-pay-common-core/0.1-SNAPSHOT/roncoo-pay-common-core-0.1-20180104.060624-1.jar" output-file-name="roncoo-pay-common-core-0.1-SNAPSHOT.jar" />
+          <element id="archive" name="roncoo-pay-common-core-0.1-SNAPSHOT.jar">
+            <element id="module-output" name="roncoo-pay-common-core" />
+          </element>
           <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.5" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
           <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.6" />

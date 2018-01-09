@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-app-notify/roncoo-pay-app-notify.iml" filepath="$PROJECT_DIR$/roncoo-pay-app-notify/roncoo-pay-app-notify.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-app-queue/roncoo-pay-app-queue.iml" filepath="$PROJECT_DIR$/roncoo-pay-app-queue/roncoo-pay-app-queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-common-config/roncoo-pay-common-config.iml" filepath="$PROJECT_DIR$/roncoo-pay-common-config/roncoo-pay-common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-common-core/roncoo-pay-common-core.iml" filepath="$PROJECT_DIR$/roncoo-pay-common-core/roncoo-pay-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-dubbo.iml" filepath="$PROJECT_DIR$/roncoo-pay-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-account/roncoo-pay-service-account.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-account/roncoo-pay-service-account.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-account-api/roncoo-pay-service-account-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-account-api/roncoo-pay-service-account-api.iml" />

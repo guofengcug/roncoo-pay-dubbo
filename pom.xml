@@ -29,6 +29,7 @@
 	<modules>
 		<!-- core 是支付系统核心基础包 -->
 		<module>roncoo-pay-app-notify</module>
+		<module>roncoo-pay-common-core</module>
 		<!-- 运营boss后台 -->
 		<module>roncoo-pay-common-config</module>
 		<!-- 对账流程app,发起对账核心业务 -->

@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/roncoo-pay-service-message/pom.xml" />
         <option value="$PROJECT_DIR$/roncoo-pay-service-message-api/pom.xml" />
         <option value="$PROJECT_DIR$/roncoo-pay-web-message/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-common-core/pom.xml" />
       </list>
     </option>
   </component>
